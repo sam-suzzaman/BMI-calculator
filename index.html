@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| BMI Calculator ||</title>
+
+    <!-- stylesheet generator -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>BMI Calculator</h2>
+
+            <form>
+                <p class="top">
+                    <label for="height">Height in cm</label>
+                    <input type="text" id="height">
+                </p>
+
+                <p class="btm">
+                    <label for="weight">Weight in cm</label>
+                    <input type="text" id="weight">
+                </p>
+
+                <div class="btn-wrapper">
+                    <button class="calculate">calculate</button>
+                </div>
+            </form>
+
+            <!-- calculating button -->
+
+            <div class="result">
+                <h4>result:<span class="result-display"></span></h4>
+            </div>
+            <!-- bmi scale -->
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>condition</th>
+                            <th>range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>under weight</td>
+                            <td>less than 18.6</td>
+                        </tr>
+                        <tr>
+                            <td>normal range</td>
+                            <td>18.6 to 24.9</td>
+                        </tr>
+                        <tr>
+                            <td>overweight</td>
+                            <td>greater than 24.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- js file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
